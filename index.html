@@ -1,1 +1,185 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasper's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center; /* Centers everything */
+        }
+
+        .container {
+            width: 60%; /* Limits text width */
+            max-width: 800px; /* Prevents overly wide text */
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+            border-left: 10px solid #0077cc; /* Left border */
+            border-right: 10px solid #0077cc; /* Right border */
+            margin: 40px 20px; /* Adds spacing around */
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #0077cc;
+            font-weight: bold;
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .project {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-left: 4px solid #0077cc;
+            background: #fafafa;
+        }
+
+        #contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        #contact-form input, #contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #contact-form button {
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #contact-form button:hover {
+            background-color: #005fa3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Jasper's Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm a roboticist passionate about solving problems.</p>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>Master's Thesis: Deployment and Optimization of a Multi-Robot System for Sample Transfer in an Automated Chemistry Laboratory</h3>
+                <p>Swiss Cat+ (West hub) is a data-driven automated infrastructure for catalyst discovery and optimization...</p>
+                <ul>
+                    <li>Created a simulated environment to test and visualize control and path planning algorithms.</li>
+                    <li>Replaced ROS Nav2 with a structured centralized multi-agent controller.</li>
+                    <li>Improved mobile robot design.</li>
+                </ul>
+                <figure>
+                    <img src="projects/edybotnew.png" alt="Redesigned mobile robot" width="100%">
+                    <figcaption>Mobile robot width decreased by 30% for better control.</figcaption>
+                </figure>
+                <figure>
+                    <img src="projects/sim2robots.png" alt="Simulated mobile robots" width="100%">
+                    <figcaption>Multi robots simulated in gazebo, visualised in RVIZ.</figcaption>
+                </figure>
+                <figure>
+                    <img src="projects/astar.gif" alt="Robot navigating" width="100%">
+                    <figcaption>Robots path planned and tracked over lab track.</figcaption>
+                </figure>
+                <figure>
+                    <img src="projects/mpc.gif" alt="MPC line tracker" width="100%">
+                    <figcaption>MPC controller used for complex Reeds-Shepp paths.</figcaption>
+                </figure>    
+                <a href="https://github.com/JasperTan97/EM_pathplanning" target="_blank">View on GitHub</a>
+            </div>
+
+            <div class="project">
+                <h3>Reliable and Robust Robotic Handling of Microplates via Computer Vision and Touch Feedback</h3>
+                <p>Worked with CREATE lab and AICA to create a localisation method for a mobile robot with dual 6-axis arm setup mounted. This robot is used for lab automation, to transfer lab trays using a mobile robot arm. Thus, localising the robot arm with lab instrumentation is necessary each time after the robot moves, and localisation should be fast and precise.</p>
+                <p>Here, I created a system that had an accuracy of 1.2mm and 0.4 deg, localised in under a minute. This is done using:</p>
+                <ul>
+                    <li>Fast localisation using STAG visual markers and a webcam attached to the robot arm.</li>
+                    <li>Precise localisation using force feedback on a body with 3 orthogonal surfaces.</li>
+                </ul>
+                <figure>
+                    <img src="projects/reference_frame_tf.jpeg" alt="Dual arm setup" width="100%">
+                    <figcaption>R1 arm equiped with visual and touch sensors localises the robot with the plate sealer, and R2 moves the plates around.</figcaption>
+                </figure>
+                <figure>
+                    <img src="projects/touch_feedback_graph.jpeg" alt="Simulated mobile robots" width="100%">
+                    <figcaption>Using force data, I identified the hard surfaces of a cuboidal object, and localise to the corner.</figcaption>
+                </figure>
+                All these are published in the paper: Reliable and robust robotic handling of microplates via computer vision and touch feedback by Scamarcio, Tan (Me!), Stellaci and Hughes, Front. Robot. AI, 2025
+                <a href="https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2024.1462717/full" target="_blank">View paper here</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>

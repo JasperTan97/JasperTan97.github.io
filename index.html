@@ -109,7 +109,8 @@
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#biggerprojects">Projects</a></li>
+                    <li><a href="#smallerprojects">Smaller Class Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -117,17 +118,18 @@
 
         <section id="about">
             <h2>About Me</h2>
-            <p>Hello! I'm a roboticist passionate about solving problems.</p>
+            <p>Hello! I'm a roboticist passionate about solving problems. Sometimes I use robots to solve these problems, and sometimes I am the robot. When I am not thinking about control theory or robot dynamics, then I am either reading or in the kitchen. And sometimes I also do sports.</p>
+            <p>I enjoy working in a team, brainstorming various solutions, keeping each other on task. I also like playing with expensive robots, so do tell me when there's something I really shouldn't be touching.</p>
         </section>
 
-        <section id="projects">
+        <section id="biggerprojects">
             <h2>My Projects</h2>
             <div class="project">
                 <h3>Master's Thesis: Deployment and Optimization of a Multi-Robot System for Sample Transfer in an Automated Chemistry Laboratory</h3>
-                <p>wiss Cat+ (West hub) is a data-driven automated infrastructure for catalyst discovery and optimization. One of its main goals is the application of robotic platforms to synthesize homogeneous catalysts. In this process, chemicals are transferred from each analysis or synthesis equipment with the aid of robots.  Because the synthesis and analysis of these chemicals require the use of several instruments, there must be a method to move the plates from one instruments to another. To do so, the engineers at Swiss Cat+ have decided to use mobile robots that would drive the chemical plates around, and a robot arm would load and unload the plates. The mobile robots drive on a track mounted on the ceiling, above the lab. For this project, I:</p>
+                <p>Swiss Cat+ (West hub) is a data-driven automated infrastructure for catalyst discovery and optimization. One of its main goals is the application of robotic platforms to synthesize homogeneous catalysts. In this process, chemicals are transferred from each analysis or synthesis equipment with the aid of robots.  Because the synthesis and analysis of these chemicals require the use of several instruments, there must be a method to move the plates from one instruments to another. To do so, the engineers at Swiss Cat+ have decided to use mobile robots that would drive the chemical plates around, and a robot arm would load and unload the plates. The mobile robots drive on a track mounted on the ceiling, above the lab. For this project, I:</p>
                 <ul>
                     <li>Created a simulated environment to test and visualize control and path planning algorithms.</li>
-                    <li>Replaced ROS Nav2 with a structured centralized multi-agent controller.</li>
+                    <li>Replaced ROS Nav2 with a structured centralized multi-agent controller, using RRT*, A*, and behaviour trees.</li>
                     <li>Improved mobile robot design.</li>
                 </ul>
                 <figure>
@@ -148,6 +150,13 @@
                 </figure>    
                 <a href="https://github.com/JasperTan97/EM_pathplanning" target="_blank">View on GitHub</a>
             </div>
+            <div class="tags">
+                <span class="tag">MPC</span>
+                <span class="tag">Reeds-Shepp paths</span>
+                <span class="tag">RRT*</span>
+                <span class="tag">Behaviour Trees</span>
+                <span class="tag">ROS 2</span>
+            </div>
 
             <div class="project">
                 <h3>Reliable and Robust Robotic Handling of Microplates via Computer Vision and Touch Feedback</h3>
@@ -165,9 +174,31 @@
                     <img src="projects/touch_feedback_graph.jpeg" alt="Simulated mobile robots" width="100%">
                     <figcaption>Using force data, I identified the hard surfaces of a cuboidal object, and localise to the corner.</figcaption>
                 </figure>
-                <p>All these ideas and figures are published (credit!) in the paper: Reliable and robust robotic handling of microplates via computer vision and touch feedback by Scamarcio, Tan (Me!), Stellaci and Hughes, Front. Robot. AI, 2025
+                <p>All these ideas and figures are published (credits) in the paper: Reliable and robust robotic handling of microplates via computer vision and touch feedback by Scamarcio, Tan (Me!), Stellaci and Hughes, Front. Robot. AI, 2025
                 </p>
                 <a href="https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2024.1462717/full" target="_blank">View paper here</a>
+            </div>
+            <div class="tags">
+                <span class="tag">6 axis robot</span>
+                <span class="tag">Force feedback</span>
+                <span class="tag">Vision</span>
+            </div>
+        </section>
+
+        <section id="smallerprojects">
+            <h2>Smaller Class Projects</h2>
+            <div class="project">
+                <p>Solved a dastardly dynamic programming problem about a robot travelling to hell and finding gems while avoiding humans. This was solved using linear programming, after also trying value and policy iteration. We came in 4th overall (the top 3 teams used python while we used matlab, so really we came in first in this programming language). </p>
+                <figure>
+                    <img src="projects/Problem_Setup_dpoc.png" alt="Space adventure" width="100%">
+                    <figcaption>Using linear programming, we brought the hero to the lower world and back to become rich</figcaption>
+                </figure>
+                <a href="https://github.com/JasperTan97/DPOC_Space_adventure" target="_blank">View on GitHub</a>
+            </div>
+            <div class="tags">
+                <span class="tag">Dynamic Programming</span>
+                <span class="tag">Linear Programming</span>
+                <span class="tag">MATLAB</span>
             </div>
         </section>
 

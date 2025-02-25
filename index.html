@@ -4,102 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jasper's Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center; /* Centers everything */
-        }
-
-        .container {
-            width: 60%; /* Limits text width */
-            max-width: 800px; /* Prevents overly wide text */
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-            border-left: 10px solid #0077cc; /* Left border */
-            border-right: 10px solid #0077cc; /* Right border */
-            margin: 40px 20px; /* Adds spacing around */
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            text-align: center;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 15px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #0077cc;
-            font-weight: bold;
-        }
-
-        h1, h2 {
-            color: #333;
-            text-align: center;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        a {
-            color: #0077cc;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .project {
-            margin-bottom: 20px;
-            padding: 15px;
-            border-left: 4px solid #0077cc;
-            background: #fafafa;
-        }
-
-        #contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        #contact-form input, #contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        #contact-form button {
-            background-color: #0077cc;
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        #contact-form button:hover {
-            background-color: #005fa3;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -149,13 +54,13 @@
                     <figcaption>MPC controller used for complex Reeds-Shepp paths.</figcaption>
                 </figure>    
                 <a href="https://github.com/JasperTan97/EM_pathplanning" target="_blank">View on GitHub</a>
-            </div>
-            <div class="tags">
-                <span class="tag">MPC</span>
-                <span class="tag">Reeds-Shepp paths</span>
-                <span class="tag">RRT*</span>
-                <span class="tag">Behaviour Trees</span>
-                <span class="tag">ROS 2</span>
+                <div class="tags">
+                    <span class="tag">MPC</span>
+                    <span class="tag">Reeds-Shepp paths</span>
+                    <span class="tag">RRT*</span>
+                    <span class="tag">Behaviour Trees</span>
+                    <span class="tag">ROS 2</span>
+                </div>
             </div>
 
             <div class="project">
@@ -177,11 +82,11 @@
                 <p>All these ideas and figures are published (credits) in the paper: Reliable and robust robotic handling of microplates via computer vision and touch feedback by Scamarcio, Tan (Me!), Stellaci and Hughes, Front. Robot. AI, 2025
                 </p>
                 <a href="https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2024.1462717/full" target="_blank">View paper here</a>
-            </div>
-            <div class="tags">
-                <span class="tag">6 axis robot</span>
-                <span class="tag">Force feedback</span>
-                <span class="tag">Vision</span>
+                <div class="tags">
+                    <span class="tag">6 axis robot</span>
+                    <span class="tag">Force feedback</span>
+                    <span class="tag">Vision</span>
+                </div>
             </div>
         </section>
 
@@ -194,12 +99,13 @@
                     <figcaption>Using linear programming, we brought the hero to the lower world and back to become rich</figcaption>
                 </figure>
                 <a href="https://github.com/JasperTan97/DPOC_Space_adventure" target="_blank">View on GitHub</a>
+                <div class="tags">
+                    <span class="tag">Dynamic Programming</span>
+                    <span class="tag">Linear Programming</span>
+                    <span class="tag">MATLAB</span>
+                </div>
             </div>
-            <div class="tags">
-                <span class="tag">Dynamic Programming</span>
-                <span class="tag">Linear Programming</span>
-                <span class="tag">MATLAB</span>
-            </div>
+            
         </section>
 
         <section id="contact">
